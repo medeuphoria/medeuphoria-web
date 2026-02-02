@@ -64,7 +64,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg text-zinc-400 max-w-md mb-8 leading-relaxed font-light">
-            Automate your practice. MedEuphoria centralizes scheduling, clinical notes, and billing into one fluid command center.
+            Automate your practice. MedEuphoria centralizes scheduling, clinical notes and billing into one fluid command center.
           </p>
 
           <div className="flex flex-row gap-4">
@@ -204,7 +204,7 @@ const DashboardPreview = () => {
                   <div className="absolute top-0 left-0 w-1 h-full bg-primary"></div>
                   <div className="flex justify-between items-center mb-6">
                     <div>
-                      <h3 className="text-white font-bold text-lg">Next: Sarah Jenkins</h3>
+                      <h3 className="text-white font-bold text-lg">Next: Thubelihle Myeni</h3>
                       <p className="text-zinc-500 text-sm">14:00 • Virtual Consultation</p>
                     </div>
                     <button className="bg-white text-black px-4 py-2 rounded-lg text-sm font-bold">Start Call</button>

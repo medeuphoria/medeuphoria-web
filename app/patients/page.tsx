@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.location.href = '/'}>
           <div className="w-8 h-8 relative rounded bg-white/10 flex items-center justify-center overflow-hidden">
-             <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
+             <img src="/logoo.png" alt="Logo" className="w-full h-full object-contain" />
           </div>
           <span className="text-lg font-bold tracking-tight text-white">MedEuphoria</span>
         </div>
@@ -78,7 +78,7 @@ const Hero = () => {
         >
           <motion.div variants={fadeIn} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-800 bg-zinc-900/80 mb-8 backdrop-blur-md">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-            <span className="text-xs font-bold text-white uppercase tracking-widest">Patient Access v1.0</span>
+            <span className="text-xs font-bold text-white uppercase tracking-widest">Patient Access</span>
           </motion.div>
 
           <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.1]">
@@ -182,7 +182,7 @@ const FeatureOne = () => {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Your health history.<br/>In your hands.</h2>
             <p className="text-xl text-zinc-400 mb-8 leading-relaxed">
-               Stop filling out the same clipboard at every new doctor. Your allergies, past surgeries, and current medications travel with you in a secure, encrypted digital passport.
+               Stop filling out the same clipboard at every new doctor. Your allergies, past surgeries, current medications and more, travel with you in a secure, encrypted digital passport.
             </p>
             <ul className="space-y-4">
                {['End-to-End Encrypted', 'Share with consent', 'Always accessible'].map((item, i) => (
@@ -198,7 +198,7 @@ const FeatureOne = () => {
                <div className="flex items-center gap-4 mb-8">
                   <div className="w-12 h-12 bg-zinc-800 rounded-full flex items-center justify-center text-white font-bold">SJ</div>
                   <div>
-                     <div className="text-white font-bold">Sarah Jenkins</div>
+                     <div className="text-white font-bold">Manqoba Thwala</div>
                      <div className="text-zinc-500 text-xs">ID: #88291-ZA</div>
                   </div>
                   <div className="ml-auto bg-green-500/10 text-green-500 text-xs font-bold px-3 py-1 rounded-full">VERIFIED</div>
@@ -229,7 +229,7 @@ const FeatureTwo = () => {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">See a specialist.<br/>Right now.</h2>
             <p className="text-xl text-zinc-400 mb-8 leading-relaxed">
-               Don't wait weeks for an appointment. Filter doctors by rating, price, and language, then book a secure video consultation instantly.
+               Don't wait weeks for an appointment. Filter doctors by rating, price and language, then book a secure video consultation instantly.
             </p>
             <button className="text-white font-bold flex items-center gap-2 hover:gap-4 transition-all group">
                Browse Doctors <ArrowRight className="text-purple-500 group-hover:text-white transition-colors" />
