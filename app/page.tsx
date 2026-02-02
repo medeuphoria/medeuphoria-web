@@ -4,10 +4,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { 
-  ArrowRight, Activity, Shield, Zap, Globe, 
-  Play, Stethoscope, Smartphone, Menu, Users,
-  CheckCircle2, Mail, Building2, Pill, Search,
-  X, CreditCard, Bed, LayoutGrid, Monitor,
+  ArrowRight, Activity, Globe, 
+  Play, Stethoscope, Users,
+  CheckCircle2, Mail, Pill, Search,
+  X,
   Video
 } from 'lucide-react';
 
