@@ -14,7 +14,7 @@ import {
 // --- ANIMATION ---
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
 };
 
 // --- COMPONENTS ---
@@ -106,13 +106,13 @@ const Hero = () => {
               {/* Rotating Pill Container */}
               <motion.div 
                 animate={{ rotateY: 360, rotateZ: 45 }}
-                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 25, repeat: Infinity }}
                 className="absolute inset-0 border-[1px] border-[#10B981]/30 rounded-[3rem]"
                 style={{ transformStyle: 'preserve-3d' }}
               />
               <motion.div 
                 animate={{ rotateY: -360, rotateX: 45 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 20, repeat: Infinity }}
                 className="absolute inset-4 border-[1px] border-zinc-700/40 rounded-[3rem]"
                 style={{ transformStyle: 'preserve-3d' }}
               />
@@ -137,7 +137,6 @@ const Hero = () => {
                   transition={{
                     duration: 4 + i,
                     repeat: Infinity,
-                    ease: "easeInOut",
                     delay: i * 0.7
                   }}
                   style={{

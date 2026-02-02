@@ -12,7 +12,7 @@ import {
 // --- ANIMATION ---
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
 };
 
 // --- COMPONENTS ---
@@ -104,7 +104,7 @@ const Hero = () => {
               {/* Data Blocks */}
               <motion.div 
                 animate={{ rotateY: -360 }}
-                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 30, repeat: Infinity }}
                 className="absolute inset-0"
                 style={{ transformStyle: 'preserve-3d' }}
               >

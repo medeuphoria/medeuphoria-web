@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, Variants } from 'framer-motion';
 // Removed unused 'Link' import to prevent build errors
 import { 
   Activity, ArrowRight, Play, CheckCircle2, 
@@ -12,12 +12,12 @@ import {
 
 // --- ANIMATION HELPERS ---
 // FIXED: Removed 'ease' property to prevent TypeScript build errors
-const fadeIn = {
+const fadeIn: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
 };
 
-const staggerContainer = {
+const staggerContainer: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,

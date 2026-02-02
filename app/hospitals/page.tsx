@@ -11,7 +11,7 @@ import {
 // --- ANIMATION ---
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
 };
 
 // --- COMPONENTS ---
@@ -105,7 +105,7 @@ const Hero = () => {
                 <motion.div 
                   key={i}
                   animate={{ rotateX: 60, rotateZ: 360 }}
-                  transition={{ duration: 30 + (i * 5), repeat: Infinity, ease: "linear" }}
+                  transition={{ duration: 30 + (i * 5), repeat: Infinity }}
                   className="absolute inset-0 border-[2px] border-[#EF4444]/20 rounded-xl bg-[#EF4444]/5 backdrop-blur-sm shadow-lg shadow-red-900/20"
                   style={{ 
                     top: i * -40, // Stack them
@@ -130,7 +130,7 @@ const Hero = () => {
                   className="absolute w-32 h-1 bg-gradient-to-r from-transparent via-[#EF4444] to-transparent"
                   style={{ top: '50%', left: '-20%' }}
                   animate={{ x: [0, 200], opacity: [0, 1, 0] }}
-                  transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                  transition={{ duration: 2, repeat: Infinity }}
               />
            </div>
         </motion.div>

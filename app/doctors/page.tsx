@@ -11,7 +11,7 @@ import {
 // --- ANIMATION ---
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
 };
 
 // --- COMPONENTS ---
@@ -90,13 +90,13 @@ const Hero = () => {
               {/* Rotating Rings (Simulating CT/MRI Scan) */}
               <motion.div 
                 animate={{ rotateX: 360, rotateY: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 20, repeat: Infinity }}
                 className="absolute inset-0 border-[1px] border-primary/20 rounded-full"
                 style={{ transformStyle: 'preserve-3d' }}
               />
               <motion.div 
                 animate={{ rotateX: -360, rotateY: 180 }}
-                transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 15, repeat: Infinity }}
                 className="absolute inset-4 border-[1px] border-zinc-700/40 rounded-full"
                 style={{ transformStyle: 'preserve-3d' }}
               />
@@ -121,7 +121,6 @@ const Hero = () => {
                   transition={{
                     duration: 3 + i,
                     repeat: Infinity,
-                    ease: "easeInOut",
                     delay: i * 0.5
                   }}
                   style={{
