@@ -2,18 +2,19 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import Link from 'next/link';
+// Removed unused 'Link' import to prevent build errors
 import { 
   Activity, ArrowRight, Play, CheckCircle2, 
   Smartphone, Shield, Clock, MapPin, 
   FileText, Heart, Video, Menu, X, Pill, 
-  ChevronRight, Calendar, User
+  Calendar, User
 } from 'lucide-react';
 
 // --- ANIMATION HELPERS ---
+// FIXED: Removed 'ease' property to prevent TypeScript build errors
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
 };
 
 const staggerContainer = {
@@ -40,7 +41,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.location.href = '/'}>
           <div className="w-8 h-8 relative rounded bg-white/10 flex items-center justify-center overflow-hidden">
-             <img src="/logoo.png" alt="Logo" className="w-full h-full object-contain" />
+             <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
           </div>
           <span className="text-lg font-bold tracking-tight text-white">MedEuphoria</span>
         </div>
@@ -111,7 +112,7 @@ const Hero = () => {
               <div className="flex justify-between items-center mb-8">
                 <div>
                    <div className="text-zinc-500 text-xs font-bold uppercase tracking-wider mb-1">Good Morning</div>
-                   <div className="text-white font-bold text-2xl">Manqoba</div>
+                   <div className="text-white font-bold text-2xl">Sarah</div>
                 </div>
                 <div className="w-10 h-10 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center">
                    <User size={18} className="text-primary" />
@@ -195,9 +196,9 @@ const FeatureOne = () => {
             <div className="absolute inset-0 bg-primary/10 blur-[100px] rounded-full" />
             <div className="relative bg-zinc-900 border border-zinc-800 p-8 rounded-3xl">
                <div className="flex items-center gap-4 mb-8">
-                  <div className="w-12 h-12 bg-zinc-800 rounded-full flex items-center justify-center text-white font-bold">MT</div>
+                  <div className="w-12 h-12 bg-zinc-800 rounded-full flex items-center justify-center text-white font-bold">SJ</div>
                   <div>
-                     <div className="text-white font-bold">Manqoba Thwala</div>
+                     <div className="text-white font-bold">Sarah Jenkins</div>
                      <div className="text-zinc-500 text-xs">ID: #88291-ZA</div>
                   </div>
                   <div className="ml-auto bg-green-500/10 text-green-500 text-xs font-bold px-3 py-1 rounded-full">VERIFIED</div>
